@@ -1,214 +1,334 @@
 <!DOCTYPE html>
-<html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
 
-    
 
-    <title>
-      vc++(vs2010) windows编程与绘图程序设计 | lewyu 
-    </title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
-      <meta name="author" content="lewyu">
-    
-    
 
-    <meta name="description" content="11 Vc++2010开发平台概述    31.1    Vc++2010概述    31.2 Visual Studio 2010 集成开发环境    31.2.1安装Visual Studio 2010    31.2.2配置Visual Studio 2010    31.2.3解决方案和项目    31.2.4生成和调试工具    31.2.5部署工具    31.2.6 Ribbon界面">
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="11 Vc++2010开发平台概述    31.1    Vc++2010概述    31.2 Visual Studio 2010 集成开发环境    31.2.1安装Visual Studio 2010    31.2.2配置Visual Studio 2010    31.2.3解决方案和项目    31.2.4生成和调试工具    31.2.5部署工具    31.2.6 Ribbon界面">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vc++(vs2010) windows编程与绘图程序设计 | lewyu">
+<meta property="og:title" content="vc++(vs2010) windows编程与绘图程序设计">
 <meta property="og:url" content="http://yoursite.com/2017/09/21/vc++(vs2010) windows编程与绘图程序设计/index.html">
 <meta property="og:site_name" content="lewyu">
 <meta property="og:description" content="11 Vc++2010开发平台概述    31.1    Vc++2010概述    31.2 Visual Studio 2010 集成开发环境    31.2.1安装Visual Studio 2010    31.2.2配置Visual Studio 2010    31.2.3解决方案和项目    31.2.4生成和调试工具    31.2.5部署工具    31.2.6 Ribbon界面">
 <meta property="og:updated_time" content="2017-09-21T15:13:12.172Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vc++(vs2010) windows编程与绘图程序设计 | lewyu">
+<meta name="twitter:title" content="vc++(vs2010) windows编程与绘图程序设计">
 <meta name="twitter:description" content="11 Vc++2010开发平台概述    31.1    Vc++2010概述    31.2 Visual Studio 2010 集成开发环境    31.2.1安装Visual Studio 2010    31.2.2配置Visual Studio 2010    31.2.3解决方案和项目    31.2.4生成和调试工具    31.2.5部署工具    31.2.6 Ribbon界面">
-    
-    
-    
-      <link rel="icon" type="image/x-icon" href="/favicon.png">
-    
-    <link rel="stylesheet" href="/css/uno.css">
-    <link rel="stylesheet" href="/css/highlight.css">
-    <link rel="stylesheet" href="/css/archive.css">
-    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/09/21/vc++(vs2010) windows编程与绘图程序设计/"/>
+
+
+
+
+
+  <title>vc++(vs2010) windows编程与绘图程序设计 | lewyu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
-<body>
 
-    <span class="mobile btn-mobile-menu">
-        <i class="icon icon-list btn-mobile-menu__icon"></i>
-        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-    </span>
-
-    
-
-<header class="panel-cover panel-cover--collapsed">
-
-
-  <div class="panel-main">
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
 
   
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
+  
+    
+  
 
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">lewyu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
         
-
-        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">lewyu</a></h1>
-        <hr class="panel-cover__divider" />
-
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
         
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
 
-        <div class="navigation-wrapper">
+      
+    </ul>
+  
 
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-
-              
-                
-                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
-              
-                
-                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
-              
-                
-                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
-              
-
-            </ul>
-          </nav>
-
-          <!-- ----------------------------
-To add a new social icon simply duplicate one of the list items from below
-and change the class in the <i> tag to match the desired social network
-and then add your link to the <a>. Here is a full list of social network
-classes that you can use:
-
-    icon-social-500px
-    icon-social-behance
-    icon-social-delicious
-    icon-social-designer-news
-    icon-social-deviant-art
-    icon-social-digg
-    icon-social-dribbble
-    icon-social-facebook
-    icon-social-flickr
-    icon-social-forrst
-    icon-social-foursquare
-    icon-social-github
-    icon-social-google-plus
-    icon-social-hi5
-    icon-social-instagram
-    icon-social-lastfm
-    icon-social-linkedin
-    icon-social-medium
-    icon-social-myspace
-    icon-social-path
-    icon-social-pinterest
-    icon-social-rdio
-    icon-social-reddit
-    icon-social-skype
-    icon-social-spotify
-    icon-social-stack-overflow
-    icon-social-steam
-    icon-social-stumbleupon
-    icon-social-treehouse
-    icon-social-tumblr
-    icon-social-twitter
-    icon-social-vimeo
-    icon-social-xbox
-    icon-social-yelp
-    icon-social-youtube
-    icon-social-zerply
-    icon-mail
-
--------------------------------->
-
-<!-- add social info here -->
-
-
-
-<nav class="cover-navigation navigation--social">
-  <ul class="navigation">
-
-    
-      <!-- Github -->
-      <li class="navigation__item">
-        <a href="https://github.com/lewyu" title="GitHub">
-          <i class='icon icon-social-github'></i>
-          <span class="label">GitHub</span>
-        </a>
-      </li>
-    
-
-    <!-- China social icon -->
-    <!--
-    
-      <li class="navigation__item">
-        <a href="" title="">
-          <i class='icon cs-icon-douban'></i>
-          <span class="label">Douban</span>
-        </a>
-      </li>
-
-      <li class="navigation__item">
-        <a href="" title="">
-          <i class='icon cs-icon-weibo'></i>
-          <span class="label">Weibo</span>
-        </a>
-      </li>
-    -->
-
-
-
-  </ul>
+  
 </nav>
 
 
 
-        </div>
+ </div>
+    </header>
 
-      </div>
-
-    </div>
-
-    <div class="panel-cover--overlay"></div>
-  </div>
-</header>
-
-    <div class="content-wrapper">
-        <div class="content-wrapper__inner entry">
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
             
 
-<article class="post-container post-container--single">
-
-  <header class="post-header">
-    
-    <h1 class="post-title">vc++(vs2010) windows编程与绘图程序设计</h1>
-
+  <div id="posts" class="posts-expand">
     
 
-    <div class="post-meta">
-      <time datetime="2017-09-21" class="post-meta__date date">2017-09-21</time> 
+  
 
-      <span class="post-meta__tags tags">
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/21/vc++(vs2010) windows编程与绘图程序设计/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lewyu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lewyu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">vc++(vs2010) windows编程与绘图程序设计</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-21T23:10:58+08:00">
+                2017-09-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
 
           
 
           
 
-      </span>
-    </div>
-    
+        </div>
+      </header>
     
 
-  </header>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-  <section id="post-content" class="article-content post">
-    <p>11 Vc++2010开发平台概述    3<br>1.1    Vc++2010概述    3<br>1.2 Visual Studio 2010 集成开发环境    3<br>1.2.1安装Visual Studio 2010    3<br>1.2.2配置Visual Studio 2010    3<br>1.2.3解决方案和项目    3<br>1.2.4生成和调试工具    3<br>1.2.5部署工具    3<br>1.2.6 Ribbon界面设计可视化    4<br>2 Visual Studio 2010 MFC基本程序设计    4<br>2.1 MFC应用程序概述    4<br>2.1.1简单的MFC应用程序    4<br>2.1.2 MFC应用程序分析    4<br>2.2 MFC应用程序的创建    4<br>2.2.1 用AppWizard创建CLR控制台应用程序    4<br>2.2.2 用AppWizard创建win32控制台应用程序    4<br>2.2.3 用AppWizard创建一个MFC应用程序    5<br>2.3 MFC的类    9<br>2.3.1 MFC应用程序中包含的类    9<br>2.3.2 应用程序类    10<br>2.3.3 主框架类    10<br>2.3.4 视图类    10<br>2.3.5 文档类    10<br>2.3.6 对话框类    10<br>2.3.7 菜单类    10<br>2.3.8 线程基类    10<br>3 Wndows窗体应用程序    11<br>3.1 创建Wndows窗体应用程序    11<br>3.2 窗体属性及设置    12<br>3.3 窗体事件及处理    13<br>3.4 窗体控件添加与编辑    13<br>4 用户界面设计    13<br>4.1 菜单设计    13<br>4.1.1 菜单的类型    13<br>4.1.2 菜单设计    13<br>4.1.3 创建弹出式菜单    20<br>4.1.4 创建动态菜单    20<br>4.1.5 创建基于对话框的菜单    20<br>4.2 工具栏设计    20<br>4.3 状态栏设计    20<br>5 对话框设计    20<br>5.1 静态对话框    20<br>5.1.1静态对话框的建立过程    20<br>5.1.2静态对话框的应用    21<br>5.2 非静态对话框    31<br>5.3 通用对话框    31<br>6常用控件    31<br>6.1 公共控件    31<br>6.2 容器    31<br>6.3 数据控件    31<br>7 键盘鼠标事件    32<br>7.1键盘事件    32<br>7.2 鼠标事件    42<br>7.2.1客户区鼠标消息    42<br>7.2.2非客户区鼠标消息    45<br>7.2.3实例    46<br>8 图形文本与图像处理    51<br>8.1图形设备接口GDI（Graphics Device Interface）    51<br>8.2 设备上下文DC（device context）    54<br>8.2.1 设备上下文概述    54<br>8.2.2 CDC类    57<br>8.3 绘图环境    60<br>8.3.1绘图环境介绍    60<br>8.3.2映射模式与坐标系    61<br>8.3.3绘图颜色    71<br>8.3.4设置绘图属性    72<br>8.3.6几何对象的结构和类    79<br>8.4 画笔和画刷    85<br>8.4.1画笔    85<br>8.4.2画刷    92<br>8.5 绘图    99<br>8.5.1 绘图步骤    99<br>8.5.2 画像素点    99<br>8.5.3 画线状图    100<br>8.5.4 拖放画动态直线    104<br>8.5.5 画填充图    109<br>8.5.6 清屏    111<br>8.5.7 在控件上绘图    112<br>8.6 文本绘制    115<br>8.7 位图    115<br>8.8 图标和光标    116<br>8.9 图像处理    116<br>9 文件处理    116<br>10 数据库编程    116</p>
+      
+      
+
+      
+        <p>11 Vc++2010开发平台概述    3<br>1.1    Vc++2010概述    3<br>1.2 Visual Studio 2010 集成开发环境    3<br>1.2.1安装Visual Studio 2010    3<br>1.2.2配置Visual Studio 2010    3<br>1.2.3解决方案和项目    3<br>1.2.4生成和调试工具    3<br>1.2.5部署工具    3<br>1.2.6 Ribbon界面设计可视化    4<br>2 Visual Studio 2010 MFC基本程序设计    4<br>2.1 MFC应用程序概述    4<br>2.1.1简单的MFC应用程序    4<br>2.1.2 MFC应用程序分析    4<br>2.2 MFC应用程序的创建    4<br>2.2.1 用AppWizard创建CLR控制台应用程序    4<br>2.2.2 用AppWizard创建win32控制台应用程序    4<br>2.2.3 用AppWizard创建一个MFC应用程序    5<br>2.3 MFC的类    9<br>2.3.1 MFC应用程序中包含的类    9<br>2.3.2 应用程序类    10<br>2.3.3 主框架类    10<br>2.3.4 视图类    10<br>2.3.5 文档类    10<br>2.3.6 对话框类    10<br>2.3.7 菜单类    10<br>2.3.8 线程基类    10<br>3 Wndows窗体应用程序    11<br>3.1 创建Wndows窗体应用程序    11<br>3.2 窗体属性及设置    12<br>3.3 窗体事件及处理    13<br>3.4 窗体控件添加与编辑    13<br>4 用户界面设计    13<br>4.1 菜单设计    13<br>4.1.1 菜单的类型    13<br>4.1.2 菜单设计    13<br>4.1.3 创建弹出式菜单    20<br>4.1.4 创建动态菜单    20<br>4.1.5 创建基于对话框的菜单    20<br>4.2 工具栏设计    20<br>4.3 状态栏设计    20<br>5 对话框设计    20<br>5.1 静态对话框    20<br>5.1.1静态对话框的建立过程    20<br>5.1.2静态对话框的应用    21<br>5.2 非静态对话框    31<br>5.3 通用对话框    31<br>6常用控件    31<br>6.1 公共控件    31<br>6.2 容器    31<br>6.3 数据控件    31<br>7 键盘鼠标事件    32<br>7.1键盘事件    32<br>7.2 鼠标事件    42<br>7.2.1客户区鼠标消息    42<br>7.2.2非客户区鼠标消息    45<br>7.2.3实例    46<br>8 图形文本与图像处理    51<br>8.1图形设备接口GDI（Graphics Device Interface）    51<br>8.2 设备上下文DC（device context）    54<br>8.2.1 设备上下文概述    54<br>8.2.2 CDC类    57<br>8.3 绘图环境    60<br>8.3.1绘图环境介绍    60<br>8.3.2映射模式与坐标系    61<br>8.3.3绘图颜色    71<br>8.3.4设置绘图属性    72<br>8.3.6几何对象的结构和类    79<br>8.4 画笔和画刷    85<br>8.4.1画笔    85<br>8.4.2画刷    92<br>8.5 绘图    99<br>8.5.1 绘图步骤    99<br>8.5.2 画像素点    99<br>8.5.3 画线状图    100<br>8.5.4 拖放画动态直线    104<br>8.5.5 画填充图    109<br>8.5.6 清屏    111<br>8.5.7 在控件上绘图    112<br>8.6 文本绘制    115<br>8.7 位图    115<br>8.8 图标和光标    116<br>8.9 图像处理    116<br>9 文件处理    116<br>10 数据库编程    116</p>
 <p>1 Vc++2010开发平台概述<br>1.1    Vc++2010概述</p>
 <p>1.2 Visual Studio 2010 集成开发环境</p>
 <p>1.2.1安装Visual Studio 2010</p>
@@ -383,64 +503,320 @@ ReleaseDC(pDC);
 <p>9 文件处理</p>
 <p>10 数据库编程</p>
 
-  </section>
-
-  <section class="post-comments">
-
-    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
-  
-</section>
-
-
-</article>
-
-
-            <footer class="footer">
-
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-
-</footer>
-        </div>
+      
     </div>
-
-    <!-- js files -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/scale.fix.js"></script>
+    
+    
     
 
     
 
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript"> 
-        $(document).ready(function(){
-            MathJax.Hub.Config({ 
-                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
-            });
-        });
-    </script>
-
+    
 
     
 
-    <script src="/js/awesome-toc.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.awesome_toc({
-                overlay: true,
-                contentId: "post-content",
-            });
-        });
-    </script>
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/15/网页CSS按钮展示/" rel="next" title="网页CSS按钮">
+                <i class="fa fa-chevron-left"></i> 网页CSS按钮
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/21/秘密花园/" rel="prev" title="秘密花园">
+                秘密花园 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
     
-    <!--kill ie6 -->
-<!--[if IE 6]>
-  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
-<![endif]-->
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="lewyu" />
+          <p class="site-author-name" itemprop="name">lewyu</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="lewyu" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      github
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lewyu</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
