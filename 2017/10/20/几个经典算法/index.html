@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="蛮力算法子集 #define MAX 1000int main() {    int n;    int a[MAX];    int tol;//子集的个数    n=4;    for(int i=0; i&amp;gt;a[i];    }    tol=(1&amp;lt;&amp;lt;n)-1; //子集的个数    for(int i=0; i&amp;lt;=tol; i++) {        for(int">
+<meta property="og:type" content="article">
+<meta property="og:title" content="几个经典算法">
+<meta property="og:url" content="http://yoursite.com/2017/10/20/几个经典算法/index.html">
+<meta property="og:site_name" content="lewyu">
+<meta property="og:description" content="蛮力算法子集 #define MAX 1000int main() {    int n;    int a[MAX];    int tol;//子集的个数    n=4;    for(int i=0; i&amp;gt;a[i];    }    tol=(1&amp;lt;&amp;lt;n)-1; //子集的个数    for(int i=0; i&amp;lt;=tol; i++) {        for(int">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-20T14:09:44.084Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="几个经典算法">
+<meta name="twitter:description" content="蛮力算法子集 #define MAX 1000int main() {    int n;    int a[MAX];    int tol;//子集的个数    n=4;    for(int i=0; i&amp;gt;a[i];    }    tol=(1&amp;lt;&amp;lt;n)-1; //子集的个数    for(int i=0; i&amp;lt;=tol; i++) {        for(int">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/10/20/几个经典算法/"/>
+
+
+
+
+
+  <title>几个经典算法 | lewyu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">lewyu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/20/几个经典算法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lewyu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/touxiang.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lewyu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">几个经典算法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-20T22:09:44+08:00">
+                2017-10-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<h2 id="蛮力算法"><a href="#蛮力算法" class="headerlink" title="蛮力算法"></a>蛮力算法</h2><p>子集</p>
+<p>#define MAX 1000<br>int main() {<br>    int n;<br>    int a[MAX];<br>    int tol;//子集的个数<br>    n=4;<br>    for(int i=0; i<n; i++)="" {="" cin="">&gt;a[i];<br>    }<br>    tol=(1&lt;&lt;n)-1; //子集的个数<br>    for(int i=0; i&lt;=tol; i++) {<br>        for(int j=0; j&lt;n; j++)<br>            if(i&amp;(i&lt;&lt;j)) cout&lt;&lt;a[j];  //i&lt;&lt;j相当于对每一个进行标记<br>        cout&lt;&lt;” “&lt;&lt;endl;<br>    }</n;></p>
+<p>}4<br>6</p>
+<hr>
+<h2 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h2><p>1.输出全排列</p>
+<p>void Perm(int list[],int k,int m) {<br>    if(k==m) {<br>        for(int i=0; i&lt;=m; i++)<br>            cout&lt;&lt;list[i]&lt;&lt;”　“;<br>        cout&lt;&lt;endl;<br>    } else {<br>        for(int j=k; j&lt;=m; j++) {<br>            swap(list[k],list[j]);<br>            Perm(list,k+1,m);<br>            swap(list[k],list[j]);<br>        }<br>    }</p>
+<p>}<br>int main() {<br>    int list[]= {1,2,3,4,5};<br>    Perm(list,0,3);<br>}<br>//正整数n的划分算法</p>
+<p>int split(int n,int m)<br>{<br>    if(n==1||m==1) return 1;<br>    else if (n&lt;m) return split(n,n);<br>    else if(n==m) return split(n,n-1)+1;<br>    else return split(n,m-1)+split(n-m,m);<br>}</p>
+<p>int main()<br>{<br>    int n;<br>    while (cin&gt;&gt;n)<br>        cout&lt;&lt;split(n, n)&lt;&lt;endl;<br>    return 0;<br>}</p>
+<pre><code>//对一个段进行递归调用
+return select(j+1, right, k-j+left-1);
+else return select(left, j-1, k);
+</code></pre><p>}</p>
+<p>int main()<br>{<br>    int n, k;<br>    while (cin&gt;&gt;n&gt;&gt;k)<br>    {<br>        for (int i=0; i<n; i++)="" cin="">&gt;a[i];<br>        cout&lt;&lt;select(0, n-1, k)&lt;&lt;endl;<br>    }<br>    return 0;<br>}<br>//半数集问题的递归算法</n;></p>
+<p>int a[1001];<br>int comp(int n)<br>{<br>    int ans=1;<br>    if(a[n]&gt;0)return a[n];<br>    for(int i=1;i&lt;=n/2;i++)<br>        ans+=comp(i);<br>    a[n]=ans;<br>    return ans;<br>}</p>
+<p>int main()<br>{<br>    int n;<br>    while(cin&gt;&gt;n)<br>    {<br>        memset(a,0,sizeof(a));<br>        a[1]=1;<br>        cout&lt;&lt;comp(n)&lt;&lt;endl;<br>    }<br>    return 0;<br>}</p>
+<hr>
+<h2 id="分治算法"><a href="#分治算法" class="headerlink" title="分治算法"></a>分治算法</h2><p>选择问题<br>//采用分治策略找出第k小元素的算法</p>
+<p>#define NUM 1001<br>int a[NUM];<br>int select(int left, int right, int k)<br>{<br>    //找到第k小的元素<br>    if (left &gt;= right) return a[left];<br>    int i = left;<br>    int j = right+1;<br>    //把最左边的元素作为分界数据<br>    int pivot = a[left];<br>    while (true)<br>    {<br>        do {<br>            i = i+1;<br>        } while (a[i] &lt; pivot);<br>        do {<br>            j = j-1;<br>        } while (a[j] &gt; pivot);<br>        if (i &gt;= j) break;<br>        swap(a[i], a[j]);<br>    }<br>    if (j-left+1 == k) return pivot;<br>    a[left] = a[j];<br>    a[j] = pivot;<br>    if (j-left+1 &lt; k)<br>        return select(j+1,right,k-j+left-1);<br>        else return select(left,j-1,k);<br>}<br>    选择第K个大的数</p>
+<p>#include<iostream><br>using namespace std;<br>void swap(int <em>a, int </em>b)<br>{<br>    int tmp;<br>    tmp = <em>a;
+    </em>a = <em>b;
+    </em>b = tmp;<br>}<br>int partition(int arr[], int left, int right, int pivotIndex)<br>{<br>    int storeIndex = left;<br>    int pivotValue = arr[pivotIndex];<br>    int i;<br>    swap(&amp;arr[pivotIndex],&amp;arr[right]);<br>    for (i = left; i &lt; right; i ++)<br>    {<br>        if (arr[i] &gt; pivotValue)<br>        {<br>            swap(&amp;arr[i],&amp;arr[storeIndex]);<br>            storeIndex++;<br>        }<br>    }<br>    swap(&amp;arr[storeIndex],&amp;arr[right]);<br>    return storeIndex;<br>}<br>int findKMax(int arr[], int left, int right, int k)<br>{<br>    int nRet;<br>    int pivotIndex = left + 1;<br>    nRet = partition(arr,left,right,pivotIndex);<br>    if (nRet &lt; k)<br>    {<br>        return findKMax(arr,nRet+1,right,k);<br>    }<br>    else if (nRet &gt; k)<br>    {<br>        return findKMax(arr,left,nRet-1,k);<br>    }<br>    return nRet;<br>}<br>int main()<br>{<br>    int i,k,nRet;<br>    int arr[] = {8,3,4,1,9,7,6,10};<br>    scanf(“%d”,&amp;k);<br>    nRet = findKMax(arr,0,7,k-1);<br>    printf(“The Kth Max Number locate in %d is :%d\n”,nRet,arr[nRet]);<br>    for (i = 0; i &lt; 8; i++)<br>    {<br>        printf(“%3d”,arr[i]);<br>    }<br>    return 0;<br>}<br>/循环赛程表<br>int a[MAX][MAX];<br>void Copy(int tox, int toy, int fromx, int fromy, int r)<br>{<br>    for (int i=0; i&lt;r; i++)<br>        for (int j=0; j&lt;r; j++)<br>            a[tox+i][toy+j] = a[fromx+i][fromy+j];<br>}<br>//构造循环赛日程表，选手的数量n=2^k<br>void Table(int k)<br>{<br>    int i, r;<br>    int n = 1 &lt;&lt; k;<br>    //构造正方形表格的第一行数据<br>    for (i=0; i&lt;n; i++)<br>        a[0][i] = i + 1;<br>        //采用分治算法构造整个循环日程赛表<br>    for (r=1; r&lt;n; r&lt;&lt;=1)<br>        for (i=0; i&lt;n; i+=2*r)<br>        {<br>            Copy(r, i + r, 0, i, r);<br>            Copy(r, i, 0, i + r, r);<br>        }<br>}</iostream></p>
+<p>void Out(int n)<br>{<br>    for (int i=0; i&lt;n; i++)<br>    {<br>        for (int j=0; j&lt;n; j++)<br>            printf(“%3d”, a[i][j]);<br>        printf(“\n”);<br>    }<br>    printf(“\n”);<br>}</p>
+<p>int main()<br>{<br>    int k;<br>    while (scanf(“%d”, &amp;k) &amp;&amp; k)<br>    {<br>        int n = 1 &lt;&lt; k;<br>        Table(k);<br>        Out(n);<br>    }<br>    return 0;<br>}</p>
+<hr>
+<h2 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h2><p>矩阵链乘积</p>
+<p>int m[100][100];<br>int p[100],s[100][100];<br>int k;<br>int  TraceBack(int i,int j) {<br>        if(m[i][j]&gt;0) return m[i][j];<br>        if(i==j) return 0;<br>        int u=TraceBack(i,i)+TraceBack(i+1,j)+p[i-1]<em>p[k]</em>p[j];<br>        s[i][j]=i;<br>        for(int k=i+1; k&lt;j; k++) {<br>                int t=TraceBack(i,k)+TraceBack(k+1,j)+p[i-1]<em>p[k]</em>p[j];<br>                if(t&lt;u) {<br>                        u=t;<br>                        s[i][j]=k;<br>                }<br>                m[i][j]=u;<br>                return u;<br>        }<br>}</p>
+<p>最多单减子序列</p>
+<p>#include<iostream><br>using namespace std;</iostream></p>
+<p>#define MAX 1000<br>int a[MAX] = {2,1,3};<br>int select(int left,int right,int k) {<br>    if(left&gt;=right) return a[left];<br>    int i =left;<br>    int j = right+1;<br>    int pivot = a[left]; //把第一个设为界点<br>    while(true) {<br>        do {<br>            i++;<br>        } while(a[i]<pivot); do="" {="" j--;="" }="" while(a[j]="">pivot);<br>        if(i&gt;=j) break;<br>        swap(a[i],a[j]);<br>    }<br>    if(j-left+1==k) return pivot; //该界点就是要找的数<br>    a[left]=a[j];<br>    a[j]=pivot;<br>    if(j-left+1&lt;k) return select(j+1, right, k-j+left-1);<br>    else return select(left,j-1,k);<br>}<br>int main() {<br>//    int a[3] = {2,1,3};<br>    cout&lt;&lt;select(0,2,2);<br>}<br>//计算0-1背包的动态规划算法</pivot);></p>
+<p>#define NUM 50</p>
+<p>#define CAP 1500<br>int v[NUM];<br>int w[NUM];<br>int p[NUM][CAP];<br>//形参c是背包的容量w，n是物品的数量<br>void knapsack(int c, int n)<br>{<br>    int jMax=min(w[n]-1,c);<br>    for( int j=0; j&lt;=jMax; j++)<br>        p[n][j]=0;<br>    for( int j=w[n]; j&lt;=c; j++)<br>        p[n][j]=v[n];<br>    for( int i=n-1; i&gt;1; i–)<br>    {<br>        jMax=min(w[i]-1,c);<br>        for( int j=0; j&lt;=jMax; j++)<br>            p[i][j]=p[i+1][j];<br>        for(int j=w[i]; j&lt;=c; j++)<br>            p[i][j]=max(p[i+1][j], p[i+1][j-w[i]]+v[i]);<br>    }<br>    p[1][c]=p[2][c];<br>    if (c&gt;=w[1])<br>        p[1][c]=max(p[1][c], p[2][c-w[1]]+v[1]);<br>}<br>void traceback( int c, int n, int x[ ])<br>{<br>    for(int i=1; i&lt;n; i++)<br>    {<br>        if (p[i][c]==p[i+1][c]) x[i]=0;<br>        else { x[i]=1; c-=w[i]; }<br>    }<br>    x[n]=(p[n][c])? 1:0;<br>} </p>
+<p>int main ()<br>{<br>    int x[NUM];<br>    int W;<br>    int n;<br>    while (scanf(“%d”, &amp;W) &amp;&amp; W)<br>    {<br>        scanf(“%d”, &amp;n);<br>        for (int i=1; i&lt;=n; i++)<br>            scanf(“%d%d”, &amp;w[i], &amp;v[i]);<br>        memset (p, 0, sizeof(p));<br>        knapsack(W, n);<br>        printf(“%d\n”, p[1][W]);<br>        traceback(W, n, x);<br>        for (int i=1; i&lt;=n; i++)<br>            if (x[i]) printf(“%d “, i);<br>        printf(“\n”);<br>    }<br>    return 0;<br>}<br>//计算最大字段和的动态规划算法的最优解</p>
+<p>#include <stdio.h></stdio.h></p>
+<p>#define NUM 1001<br>int a[NUM];<br>int MaxSum(int n, int &amp;besti, int &amp;bestj)<br>{<br>    int sum=0;<br>    int b=0;<br>    int begin = 0;<br>    for (int i=1;i&lt;=n;i++)<br>    {<br>        if (b&gt;0) b+=a[i];<br>        else {b=a[i];begin = i;}<br>        if (b&gt;sum)<br>        {<br>            sum = b;<br>            besti = begin;<br>            bestj = i;<br>        }<br>    }<br>    return sum;<br>}<br>int main()<br>{<br>    int n;<br>    int besti, bestj;<br>    while (scanf(“%d”, &amp;n) &amp;&amp; n)<br>    {<br>        besti = 0;<br>        bestj = 0;<br>        for (int i=1; i&lt;=n; i++)<br>            scanf(“%d”, &amp;a[i]);<br>        printf(“%d\n”, MaxSum(n, besti, bestj));<br>        printf(“From %d to %d\n”, besti, bestj);<br>    }<br>    return 0;</p>
+<h2 id=""><a href="#" class="headerlink" title="}"></a>}</h2><h2 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h2><p>//删数问题 ，找最近下降点</p>
+<p>#include<iostream></iostream></p>
+<p>#include<string><br>using namespace std;<br>int main() {<br>    string a;<br>    int k;<br>    cin&gt;&gt;a&gt;&gt;k;<br>    if(k&gt;=a.size()) a.erase();<br>    else while(k&gt;0) {<br>        int i;<br>        for(i=0; (i<a.size()-1)&&a[i]<=a[i+1]; i++);="" a.erase(i,1);="" k--;="" }="" while(a.size()="">1 &amp;&amp; a[0]==’0’)<br>        a.erase(0,1);<br>    cout&lt;&lt;a&lt;&lt;endl;<br>}<br>删数问题</a.size()-1)&&a[i]<=a[i+1];></string></p>
+<p>#include<iostream></iostream></p>
+<p>#include<string><br>using namespace std;<br>int main()<br>{<br>   string n;<br>   int s,i,x,l,m;<br>   while(cin&gt;&gt;n&gt;&gt;s)<br>   {<br>        i=-1,m=0,x=0;<br>        l=n.length();<br>        while(x<s&&m==0) {="" i++;="" if(n[i]="">n[i+1])//出现递减,删除递减的首数字<br>              {<br>                  n=n.erase(i,1);<br>                  x++;// x统计删除数字的个数<br>                  i=-1;//从头开始查递减区间<br>              }<br>             if(i==l-x-2&amp;&amp;x&lt;s)<br>             m=1;//已经无递减区间,m=1脱离循环<br>         }<br>     cout&lt;&lt;n.substr(0,l-s+x)&lt;&lt;endl;//只打印剩下的左边l-(s-x)个数字<br>   }<br>   return 0;<br>}</s&&m==0)></string></p>
+<hr>
+<h2 id="回溯算法"><a href="#回溯算法" class="headerlink" title="回溯算法"></a>回溯算法</h2><p>轮船装载（回溯）</p>
+<p>#include<iostream><br>using namespace std;</iostream></p>
+<p>#define NUM 100             //解空间树<br>int n;     //集装箱数量<br>int c;     //轮船装在数量<br>int w[NUM];//集装箱重量数组<br>int x[NUM];//解向量<br>int r;     //剩余集装箱重量<br>int cw;    //当前轮船载重量<br>int bestw; //当前最优载重量<br>int bestx[NUM];//当前最优解<br>void Backtrack(int t) {<br>    //到达叶子节点<br>    if(t&gt;n) {<br>        if(cw&gt;bestw) {    //更新最优解<br>            for(int i=1; i&lt;=n; i++)<br>                bestx[i] = x[i];<br>            bestw = cw;<br>        }<br>        return;<br>    }<br>    //更新剩余集装箱的重量<br>    r-= w[t];<br>    //搜索左子树<br>    if(cw+w[t]&lt;=c) {<br>        x[t]=1;<br>        \<br>        cw+=w[t];<br>        Backtrack(t+1);<br>        cw-=w[t];//恢复 状态<br>    }</p>
+<pre><code>//搜索右子树
+if(cw+r&gt;bestw) {
+    x[t]=0;
+    Backtrack(t+1);
+}
+
+r+= w[t];//恢复状态
+</code></pre><p>}<br>int main() {</p>
+<p>}</p>
+<p>N皇后问题</p>
+<p>#include<iostream></iostream></p>
+<p>#include<cmath><br>using namespace std;</cmath></p>
+<p>#define NUM 20<br>int n=8;<br>int x[NUM]; //记录解向量,列号<br>int sum=0; //解的个数</p>
+<p>inline bool Place(int t) {<br>    int i;<br>    for(i=1; i<t; i++)="" {="" if((abs(t-i)="=" abs(x[i]-x[t]))="" ||="" (x[i]="=x[t]))" return="" false;="" }="" true;="" 只要不满足循环就返回true="" void="" backtrack(int="" t)="" int="" i;="" 叶子节点="" if(t="">n)    {<br>        sum++;<br>        for(i=1; i&lt;=n; i++) {<br>            cout&lt;<x[i]; }="" cout<<endl;="" else="" {="" for(i="1;" i<="n;" i++)="" x[t]="i;" if(place(t))="" backtrack(t+1);="" int="" main()="" cin="">&gt;n;<br>    Backtrack(1);<br>    cout&lt;&lt;”Total=”&lt;&lt;sum&lt;&lt;endl;<br>}</x[i];></t;></p>
+<hr>
+<h2 id="分支限界算法"><a href="#分支限界算法" class="headerlink" title="分支限界算法"></a>分支限界算法</h2><p>装载问题分支限界算法的实现</p>
+<p>#include<iostream></iostream></p>
+<p>#include<queue></queue></p>
+<p>#include<algorithm><br>using namespace std;</algorithm></p>
+<p>#define NUM 100<br>int n;//集装箱的数量<br>int c;//轮船的载重量<br>int w[NUM];////集装箱的重量数组</p>
+<p>int MaxLoading()<br>{<br>    queue<int> Q;<br>    Q.push(-1);<br>    int i = 0;<br>    int Ew = 0;<br>    int bestw = 0;<br>    int r = 0;<br>    for(int j=1; j<n; j++)="" r="" +="w[j];" while="" (true)="" {="" int="" wt="Ew+w[i];" if="" (wt<="c)" (wt="">bestw) bestw = wt;<br>            if (i<n-1) q.push(wt);="" }="" if="" (ew+r="">bestw &amp;&amp; i&lt;n-1) Q.push(Ew);<br>        Ew = Q.front();<br>        Q.pop();<br>        if (Ew==-1)<br>        {<br>            if (Q.empty()) return bestw;<br>            Q.push(-1);<br>            Ew = Q.front();<br>            Q.pop();<br>            i++;<br>            r -= w[i];<br>        }<br>    }<br>    return bestw;<br>}</n-1)></n;></int></p>
+<p>int main()<br>{<br>    while(scanf(“%d%d”, &amp;c, &amp;n)!=EOF)<br>    {<br>        for(int i=0; i&lt;n; i++)<br>            scanf(“%d”,&amp;w[i]);<br>        int ans  =  MaxLoading();<br>        if (ans) printf(“%d\n”, ans);<br>        else printf(“No answer!\n”);<br>    }<br>    return 0;<br>}</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请我吃辣条吧！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/path/to/wechat-reward-image" alt="lewyu WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/path/to/alipay-reward-image" alt="lewyu Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/08/褐色鸟群/" rel="next" title="LOST&FOUND">
+                <i class="fa fa-chevron-left"></i> LOST&FOUND
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/img/touxiang.gif"
+               alt="lewyu" />
+          <p class="site-author-name" itemprop="name">lewyu</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lewyu" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/lewyu521" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lewyu521" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      微博
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/lewyu" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      知乎
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#蛮力算法"><span class="nav-number">1.</span> <span class="nav-text">蛮力算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#递归算法"><span class="nav-number">2.</span> <span class="nav-text">递归算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分治算法"><span class="nav-number">3.</span> <span class="nav-text">分治算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态规划"><span class="nav-number">4.</span> <span class="nav-text">动态规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">5.</span> <span class="nav-text">}</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#贪心算法"><span class="nav-number">6.</span> <span class="nav-text">贪心算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回溯算法"><span class="nav-number">7.</span> <span class="nav-text">回溯算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支限界算法"><span class="nav-number">8.</span> <span class="nav-text">分支限界算法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lewyu</span>
+</div>
+
+<br>
+<footer class="footer">
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
+</footer>
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
