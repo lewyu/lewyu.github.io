@@ -94,19 +94,17 @@
 
 
 
-<meta name="description" content="测试   /*头像*/ .imgtest { 	margin: 10px 5px; 	overflow: hidden; }  .list_ul figcaption p { 	font-size: 12px; 	color: #aaa; }  .imgtest figure div { 	display: inline-block; 	margin: 5px auto; 	width:">
+<meta name="description" content="报错信息: error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘type=InnoDB’ at line XX 这是因为type=InnoDB在5.0以前是可以使用的，但">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网页CSS按钮">
-<meta property="og:url" content="http://yoursite.com/2017/09/15/网页CSS按钮展示/index.html">
+<meta property="og:title" content="关于MySQL版本问题注意事项MySQL5InnoDBDialect">
+<meta property="og:url" content="http://yoursite.com/2017/11/17/关于MySQL版本问题注意事项MySQL5InnoDBDialect/index.html">
 <meta property="og:site_name" content="lewyu">
-<meta property="og:description" content="测试   /*头像*/ .imgtest { 	margin: 10px 5px; 	overflow: hidden; }  .list_ul figcaption p { 	font-size: 12px; 	color: #aaa; }  .imgtest figure div { 	display: inline-block; 	margin: 5px auto; 	width:">
+<meta property="og:description" content="报错信息: error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘type=InnoDB’ at line XX 这是因为type=InnoDB在5.0以前是可以使用的，但">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/img/touxiang1.gif">
-<meta property="og:updated_time" content="2017-10-08T07:04:31.730Z">
+<meta property="og:updated_time" content="2017-11-17T04:04:17.237Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网页CSS按钮">
-<meta name="twitter:description" content="测试   /*头像*/ .imgtest { 	margin: 10px 5px; 	overflow: hidden; }  .list_ul figcaption p { 	font-size: 12px; 	color: #aaa; }  .imgtest figure div { 	display: inline-block; 	margin: 5px auto; 	width:">
-<meta name="twitter:image" content="http://yoursite.com/img/touxiang1.gif">
+<meta name="twitter:title" content="关于MySQL版本问题注意事项MySQL5InnoDBDialect">
+<meta name="twitter:description" content="报错信息: error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘type=InnoDB’ at line XX 这是因为type=InnoDB在5.0以前是可以使用的，但">
 
 
 
@@ -135,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/15/网页CSS按钮展示/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/17/关于MySQL版本问题注意事项MySQL5InnoDBDialect/"/>
 
 
 
 
 
-  <title>网页CSS按钮 | lewyu</title>
+  <title>关于MySQL版本问题注意事项MySQL5InnoDBDialect | lewyu</title>
   
 
 
@@ -274,7 +272,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/15/网页CSS按钮展示/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/17/关于MySQL版本问题注意事项MySQL5InnoDBDialect/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lewyu">
@@ -291,7 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">网页CSS按钮</h1>
+          <h1 class="post-title" itemprop="name headline">关于MySQL版本问题注意事项MySQL5InnoDBDialect</h1>
         
 
         <div class="post-meta">
@@ -303,8 +301,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-15T11:42:17+08:00">
-                2017-09-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-17T12:00:08+08:00">
+                2017-11-17
               </time>
             
 
@@ -341,124 +339,11 @@
       
 
       
-        
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>测试</title>
-<style>
+        <p>报错信息:</p>
+<p><font color="red">error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘type=InnoDB’ at line XX</font><br></p>
+<p>这是因为type=InnoDB在5.0以前是可以使用的，但5.1之后就不行了。其实我们把type=InnoDB改为engine=InnoDB就可以了。修改如下：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 数据库方言配置 org.hibernate.dialect.MySQLDialect (选择最短的) --&gt;</div><div class="line"> &lt;property name="hibernate.dialect"&gt;org.hibernate.dialect.MySQL5InnoDBDialect&lt;/property&gt;</div></pre></td></tr></table></figure></p>
+<p>特别注意MySQL5InnoDBDialect中的5！！<br>再次运行，完美.</p>
 
-/*头像*/
-.imgtest {
-	margin: 10px 5px;
-	overflow: hidden;
-}
-
-.list_ul figcaption p {
-	font-size: 12px;
-	color: #aaa;
-}
-
-.imgtest figure div {
-	display: inline-block;
-	margin: 5px auto;
-	width: 100px;
-	height: 100px;
-	border-radius: 100px;
-	border: 2px solid #fff;
-	overflow: hidden;
-	-webkit-box-shadow: 0 0 3px #ccc;
-	box-shadow: 0 0 3px #ccc;
-}
-
-.imgtest img {
-	width: 100%;
-	min-height: 100%;
-	text-align: center;
-}
-/*按钮*/
-.button {
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-
-.button3 {
-	border-radius: 8px;
-}
-
-.button1 {
-	background-color: #f44336;
-	border-radius: 8px;
-} /* Red */
-.button:hover {
-	background-color: #f44336
-}
-
-.button:active {
-	background-color: f44336;
-	box-shadow: 0 5px #666;
-	transform: translateY(4px);
-}
-
-/*边框*/
-.table {
-	/*  background-color: #4CAF50; /* Green */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
-}
-
-.table:hover {
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
-		rgba(0, 0, 0, 0.19);
-}
-
-.table1 {
-	width: 100%;
-	background-color: white;
-	color: black;
-	border: 2px solid #e7e7e7;
-}
-</style>
-</head>
-<body>
-	<div align="center">
-		<div class="imgtest">
-			<figure>
-				<div>
-					<a href="changetouxiang。jsp"><img src="/img/touxiang1.gif"> </a>
-				</div>
-			</figure>
-		</div><a href="back.html">
-		<button class="table table1">修改资料</button></a>
-		<br><a href="back.html">
-		<button class="table table1">关于我们</button></a>
-		<br><a href="back.html">
-		<button class="table table1">消息中心</button></a>
-		<br><a href="back.html">
-		<button class="table table1">收藏兼职</button></a>
-		<br> <a href="back.html"><button class="table table1">反馈我们</button></a><br>
-		<button class="button button1">退出登录</button>
-	</div>
-
-</body>
-</html>
       
     </div>
     
@@ -511,8 +396,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/14/hello-world/" rel="next" title="Hello Music!">
-                <i class="fa fa-chevron-left"></i> Hello Music!
+              <a href="/2017/10/27/NASA/" rel="next" title="NASA">
+                <i class="fa fa-chevron-left"></i> NASA
               </a>
             
           </div>
@@ -520,10 +405,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/21/vc++(vs2010) windows编程与绘图程序设计/" rel="prev" title="vc++(vs2010) windows编程与绘图程序设计">
-                vc++(vs2010) windows编程与绘图程序设计 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
