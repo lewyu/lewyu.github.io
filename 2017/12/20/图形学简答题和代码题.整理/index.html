@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="&amp;#xa0;简答题1、计算机图形系统的组成：计算机系统是计算机硬件、图形输入输出设备、计算机系统软件和图形软件的集合。计算机图形系统由计算机硬件系统（图形计算机平台和图形设备）和软件系统（图形支撑软件、图形应用软件和图形应用数据结构）两部分组成。严格说来，使用系统的人也是这个系统的组成部分。&amp;#xa0;2、计算机图形系统的功能：计算功能、存储功能、对话功能、输入功能、输出功能。&amp;#xa0;3、图">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图形学简答题和代码题.整理">
+<meta property="og:url" content="http://yoursite.com/2017/12/20/图形学简答题和代码题.整理/index.html">
+<meta property="og:site_name" content="lewyu">
+<meta property="og:description" content="&amp;#xa0;简答题1、计算机图形系统的组成：计算机系统是计算机硬件、图形输入输出设备、计算机系统软件和图形软件的集合。计算机图形系统由计算机硬件系统（图形计算机平台和图形设备）和软件系统（图形支撑软件、图形应用软件和图形应用数据结构）两部分组成。严格说来，使用系统的人也是这个系统的组成部分。&amp;#xa0;2、计算机图形系统的功能：计算功能、存储功能、对话功能、输入功能、输出功能。&amp;#xa0;3、图">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2017/12/20/图形学简答题和代码题.整理/7045f201-af1f-4f26-8fdd-9a90eae42fbf.001.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/20/图形学简答题和代码题.整理/7045f201-af1f-4f26-8fdd-9a90eae42fbf.002.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/20/图形学简答题和代码题.整理/7045f201-af1f-4f26-8fdd-9a90eae42fbf.003.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/20/图形学简答题和代码题.整理/7045f201-af1f-4f26-8fdd-9a90eae42fbf.004.png">
+<meta property="og:updated_time" content="2017-12-20T03:21:58.874Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="图形学简答题和代码题.整理">
+<meta name="twitter:description" content="&amp;#xa0;简答题1、计算机图形系统的组成：计算机系统是计算机硬件、图形输入输出设备、计算机系统软件和图形软件的集合。计算机图形系统由计算机硬件系统（图形计算机平台和图形设备）和软件系统（图形支撑软件、图形应用软件和图形应用数据结构）两部分组成。严格说来，使用系统的人也是这个系统的组成部分。&amp;#xa0;2、计算机图形系统的功能：计算功能、存储功能、对话功能、输入功能、输出功能。&amp;#xa0;3、图">
+<meta name="twitter:image" content="http://yoursite.com/2017/12/20/图形学简答题和代码题.整理/7045f201-af1f-4f26-8fdd-9a90eae42fbf.001.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/12/20/图形学简答题和代码题.整理/"/>
+
+
+
+
+
+  <title>图形学简答题和代码题.整理 | lewyu</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">lewyu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/20/图形学简答题和代码题.整理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lewyu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img/touxiang.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lewyu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">图形学简答题和代码题.整理</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-20T11:16:06+08:00">
+                2017-12-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="Content-Style-Type" content="text/css"><meta name="generator" content="Aspose.Words for .NET 15.1.0.0"><title></title></head><body><div><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">简答题</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">1</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">计算机图形系统的组成</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">：</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"><span style="font-family:宋体; font-size:10.5pt">计算机系统是计算机硬件、图形输入输出设备、计算机系统软件和图形软件的集合。计算机图形系统由计算机硬件系统（图形计算机平台和图形设备）和软件系统（图形支撑软件、图形应用软件和图形应用数据结构）两部分组成。严格说来，使用系统的人也是这个系统的组成部分。</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">2</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">计算机图形系统的功能</span><span style="font-family:宋体; font-size:10.5pt">：</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"><span style="font-family:宋体; font-size:10.5pt">计算功能、存储功能、对话功能、输入功能、输出功能。</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">3</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">图形学的应用（课程研究内容）</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">1</span><span style="font-family:宋体; font-size:10.5pt">）图形用户界面</span><span style="font-family:Calibri; font-size:10.5pt">2</span><span style="font-family:宋体; font-size:10.5pt">）计算机辅助设计与制造</span><span style="font-family:Calibri; font-size:10.5pt">3</span><span style="font-family:宋体; font-size:10.5pt">）事务和商务数据的图形显示</span><span style="font-family:Calibri; font-size:10.5pt">4</span><span style="font-family:宋体; font-size:10.5pt">）地形地貌和自然资源的图形显示</span><span style="font-family:Calibri; font-size:10.5pt">5</span><span style="font-family:宋体; font-size:10.5pt">）过程控制及系统环境模拟</span><span style="font-family:Calibri; font-size:10.5pt">6</span><span style="font-family:宋体; font-size:10.5pt">）电子出版及办公自动化</span><span style="font-family:Calibri; font-size:10.5pt">7</span><span style="font-family:宋体; font-size:10.5pt">）计算机动画及广告</span><span style="font-family:Calibri; font-size:10.5pt">8</span><span style="font-family:宋体; font-size:10.5pt">）计算机艺术</span><span style="font-family:Calibri; font-size:10.5pt">9</span><span style="font-family:宋体; font-size:10.5pt">）科学计算的可视化</span><span style="font-family:Calibri; font-size:10.5pt">10</span><span style="font-family:宋体; font-size:10.5pt">）工业模拟</span><span style="font-family:Calibri; font-size:10.5pt">11</span><span style="font-family:宋体; font-size:10.5pt">）计算机辅助教学。</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">4</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">．坐标系统</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:10.5pt">为了描述、分析、度量几何物体的大小、形状、位置、方向以及相互之间的各种关系使用</span><span style="font-family:宋体; font-size:10.5pt"> </span><span style="font-family:宋体; font-size:10.5pt">的参考框架叫做坐标系统。</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">5.</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">观察坐标系：</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:10.5pt">观察坐标系通常是以视点的位置为原点，通过用户指定的一个向上的观察向量来定义整</span><span style="font-family:宋体; font-size:10.5pt"> </span><span style="font-family:宋体; font-size:10.5pt">个坐标系统，缺省为左手坐标系，观察坐标系主要用于从观察者的角度对整个世界坐标系内的对象进行重</span><span style="font-family:宋体; font-size:10.5pt"> </span><span style="font-family:宋体; font-size:10.5pt">新定位和描述，从而简化几何物体在投影面的成像的数学推导和计算。</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">6.</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">计算机图形学：</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:10.5pt">用计算机建立、存储、处理某个对象的模型，并根据模型产生该对象图形输出的有关</span><span style="font-family:宋体; font-size:10.5pt"> </span><span style="font-family:宋体; font-size:10.5pt">理论、方法与技术，称为计算机图形学。</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">7.</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">计算机图形标准：</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:10.5pt">计算机图形标准是指图形系统及其相关应用程序中各界面之间进行</span><span style="font-family:宋体; font-size:10.5pt">数据传送</span><span style="font-family:宋体; font-size:10.5pt">和</span><span style="font-family:宋体; font-size:10.5pt">通信</span><span style="font-family:宋体; font-size:10.5pt">的接口标准。</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">8.</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">几何变换：</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:10.5pt">几何变换的基本方法是把变换矩阵作为一个算子，作用到图形一系列顶点的位置矢量，从</span><span style="font-family:宋体; font-size:10.5pt"> </span><span style="font-family:宋体; font-size:10.5pt">而得到这些顶点在几何变换后的新的顶点序列，连接新的顶点序列即可得到变换后的图形。</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p><p style="margin:0pt"><br style="page-break-before:always; clear:both"></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">代码题</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">1</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、圆中点法</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><a name="_Hlk501231188"><span style="background-color:#ffff00; font-family:Calibri; font-size:10.5pt">Void MidpointCircle(int r, int color)</span></a></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="background-color:#ffff00; font-family:Calibri; font-size:10.5pt"> {    int x,y;float d;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="background-color:#ffff00; font-family:Calibri; font-size:10.5pt">      x=0; y=r; d=1-r;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="background-color:#ffff00; font-family:Calibri; font-size:10.5pt">      while(x&lt;y)</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="background-color:#ffff00; font-family:Calibri; font-size:10.5pt">      {    drawpixel(x,y,color);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="background-color:#ffff00; font-family:Calibri; font-size:10.5pt">           if(d&lt;0){ d+ = 2*x+3; x++ };</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="background-color:#ffff00; font-family:Calibri; font-size:10.5pt">          else{d+ = 2*(x-y) + 5; x++;y--;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="background-color:#ffff00; font-family:Calibri; font-size:10.5pt"> } }}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="-aw-bookmark-end:_Hlk501231188"></span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">2</span><span style="font-family:宋体; font-size:10.5pt">、</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">圆</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">Bresenham</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">法</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">circle (xc, yc, radius, c)</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">int xc, yc, radius, c;</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">{   int x, y, p;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">    x=0; y=radius; p=3-2*radius;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">    while (x&lt;y)</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">    {    plot_circle_points(xc, yc, x, y, c);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">      if (p&lt;0) {p=p+4*x+6;}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">      else{   p=p+4*(x-y)+10;y-=1;}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">      x+=1;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span><span style="font-family:Calibri; font-size:10.5pt"> }</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">     if (x= =y)    plot_circle_points(xc, yc, x, y, c);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">3</span><span style="font-family:宋体; font-size:10.5pt">、</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">椭圆的算法（</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">Bresenham</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">法）</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">viod  MidpointEllipe(a,b, color)</span><span style="font-family:Calibri; font-size:10.5pt"> </span><span style="font-family:Calibri; font-size:10.5pt">{</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt"> </span><span style="font-family:Calibri; font-size:10.5pt">int a,b,color;</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt"> int x,y;  float d1,d2;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">x = 0; y = b;d1 = b*b +a*a*(-b+0.25);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">  ellipesputpixel(x,y,color);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt"> while( b*b*(x+1) &lt; a*a*(y-0.5))  //</span><span style="font-family:宋体; font-size:10.5pt">生成上半部分椭圆</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">{   if (d1&lt;0){d1 +=b*b*(2*x+3); x++;  }</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">  else  {  d1 +=(b*b*(2*x+3)+a*a*(-2*y+2))</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">x++;  y--;</span><span style="width:5.44pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">} </span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">ellipesputpixel(x,y,color);}//</span><span style="font-family:宋体; font-size:10.5pt">上部分</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:宋体; font-size:10.5pt"> </span><span style="font-family:Calibri; font-size:10.5pt">d2 = b*b*(x+0.5)*(x+0.5)+a*a*(y-1)*(y-1)-a*a*b*b;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">  while(y &gt;0)   //</span><span style="font-family:宋体; font-size:10.5pt">生成下半部分椭圆</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:宋体; font-size:10.5pt"> </span><span style="font-family:Calibri; font-size:10.5pt">{ </span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt"> if (d2 &lt;0) { d2 +=b*b*(2*x+2)+a*a*(-2*y+3);x++; </span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt"> y--</span><span style="font-family:宋体; font-size:10.5pt">；</span><span style="font-family:Calibri; font-size:10.5pt">}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">   else  {d2 += a*a*(-2*y+3);  y--; }</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">  ellipesputpixel(x,y,color);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt"> }</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">4</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">DD</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">A</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">的直线算法</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:12pt">(1)</span><span style="font-family:Calibri; font-size:12pt">DDA</span><span style="font-family:宋体; font-size:12pt">算</span><span style="font-family:宋体; font-size:12pt">法生成直线的基本</span><span style="color:#ff0000; font-family:宋体; font-size:12pt">原理</span><span style="font-family:宋体; font-size:12pt">是什么？</span><span style="font-family:Calibri; font-size:12pt">p105</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:12pt">y</span><span style="font-family:Calibri; font-size:8pt; vertical-align:sub">i</span><span style="font-family:Calibri; font-size:8pt; vertical-align:sub">=</span><span style="font-family:Calibri; font-size:12pt">kx</span><span style="font-family:Calibri; font-size:8pt; vertical-align:sub">i</span><span style="font-family:Calibri; font-size:12pt">+b</span><span style="font-family:Calibri; font-size:12pt">;</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:12pt">Y</span><span style="font-family:Calibri; font-size:8pt; vertical-align:sub">i+1</span><span style="font-family:Calibri; font-size:12pt">=kx</span><span style="font-family:Calibri; font-size:8pt; vertical-align:sub">i+1</span><span style="font-family:Calibri; font-size:12pt">+b=y</span><span style="font-family:Calibri; font-size:8pt; vertical-align:sub">i</span><span style="font-family:Calibri; font-size:12pt">+k</span><span style="font-family:宋体; font-size:12pt">△x；</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:12pt">当</span><span style="font-family:宋体; font-size:12pt">△x=</span><span style="font-family:宋体; font-size:12pt">1</span><span style="font-family:宋体; font-size:12pt">，</span><span style="font-family:Calibri; font-size:12pt">Y</span><span style="font-family:Calibri; font-size:8pt; vertical-align:sub">i+1</span><span style="font-family:Calibri; font-size:12pt">=</span><span style="font-family:Calibri; font-size:12pt">y</span><span style="font-family:Calibri; font-size:8pt; vertical-align:sub">i</span><span style="font-family:Calibri; font-size:12pt">+k</span><span style="font-family:宋体; font-size:12pt">；</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:12pt">|K|</span><span style="font-family:宋体; font-size:12pt">≤</span><span style="font-family:Calibri; font-size:12pt">1</span><span style="font-family:宋体; font-size:12pt">；</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:宋体; font-size:12pt">当</span><span style="font-family:Calibri; font-size:12pt">|K|&gt;</span><span style="font-family:Calibri; font-size:12pt">1</span><span style="font-family:宋体; font-size:12pt">时，</span><span style="font-family:Calibri; font-size:12pt">x</span><span style="font-family:宋体; font-size:12pt">和</span><span style="font-family:Calibri; font-size:12pt">y</span><span style="font-family:宋体; font-size:12pt">互换位置</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">(</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">2)</span><span style="font-family:Calibri; font-size:12pt; font-weight:normal"> </span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">直线</span><span style="color:#ff0000; font-family:宋体; font-size:10.5pt; font-weight:bold">算法</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:12pt">V</span><span style="font-family:Calibri; font-size:12pt">oid</span><span style="font-family:Calibri; font-size:12pt"> DDALine(int x0,int y0,int x1,int y1,int color){</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:24pt; widows:0"><span style="font-family:Calibri; font-size:12pt">int x, y,dx,dx,dy,k;</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:24pt; widows:0"><span style="font-family:Calibri; font-size:12pt">x</span><span style="font-family:Calibri; font-size:12pt">=x0,y=y0;</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:24pt; widows:0"><span style="font-family:Calibri; font-size:12pt">d</span><span style="font-family:Calibri; font-size:12pt">x = x1-x0;dy=x1-x0;</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:24pt; widows:0"><span style="font-family:Calibri; font-size:12pt">w</span><span style="font-family:Calibri; font-size:12pt">hile(x&lt;x1){</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:24pt; widows:0"><span style="font-family:Calibri; font-size:12pt">x</span><span style="font-family:Calibri; font-size:12pt">++;</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:24pt; widows:0"><span style="font-family:Calibri; font-size:12pt">Drawpixle(x,(int)(y+0.5),c);</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:24pt; widows:0"><span style="font-family:Calibri; font-size:12pt">y=y+K;</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; text-indent:24pt; widows:0"><span style="font-family:Calibri; font-size:12pt">}</span></p><p style="font-size:12pt; line-height:150%; margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:12pt">}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">5</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">微分数值法</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">void DDALine(int x0,int y0,int x1,int yt1,int color) </span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">{    int i,dx,dy; float xt,yt,a;</span><span style="width:14.73pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt"> dx = x1-x0; dy=y1-y0;</span><span style="width:12.78pt; text-indent:0pt; display:inline-block"></span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt"> if(abs(dx)&gt;abs(dy))</span><span style="width:3.04pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">a=abs(dx);</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt"> else a=abs(dy);</span><span style="width:18.93pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">   </span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt"> xt=(float)dx/a;</span><span style="width:20.31pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt"> </span><span style="width:18.63pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">Yt=(float)dy/a;</span><span style="width:0.91pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt"> </span><span style="width:18.63pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">   </span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt"> for (i=0; i&lt;=a; i++)</span><span style="width:6.39pt; text-indent:0pt; display:inline-block"></span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">     {drawpixel (int(x+0.5), int(y+0.5), color);</span><span style="width:6.92pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">x+=xt;y+=yt;}}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><a name="_Hlk501231252"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">6</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、直线</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">中点法</span></a></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">void Midpoint Line (int x0,int y0,int xt, int yt,int color)</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">{    int dx,dy,x,y,d;</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">dx=xt-x0;dy=yt-y0;x=x0;y=y0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">d=2*dx-2*dy;</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">while(x&lt;=xt)</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">{  draw(x,y,color); x++;</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">   if(d&lt;0){y++; d+=dx-2*dy}</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:20pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt">   else  {d+=-2*dy}}}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="-aw-bookmark-end:_Hlk501231252"></span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">7</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、直线</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">Bresenham</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">法</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">,</span><span style="font-family:宋体; font-size:12pt; font-weight:normal">试写出能获得整数</span><span style="font-family:Calibri; font-size:12pt; font-weight:normal">Bresenham</span><span style="font-family:宋体; font-size:12pt; font-weight:normal">画线算法的</span><span style="font-family:Calibri; font-size:12pt; font-weight:normal">c++</span><span style="font-family:宋体; font-size:12pt; font-weight:normal">程序（提示：①假定直线的斜率在</span><span style="font-family:Calibri; font-size:12pt; font-weight:normal">0</span><span style="font-family:宋体; font-size:12pt; font-weight:normal">和</span><span style="font-family:Calibri; font-size:12pt; font-weight:normal">1</span><span style="font-family:宋体; font-size:12pt; font-weight:normal">之间）</span><span style="font-family:宋体; font-size:12pt; font-weight:normal">。</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">Bresenhamline(int x0,int y0,int x1,int y1)</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">{ int x,y,dx,dy,e;</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">Dx=x1-x0;</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">Dy=y1-y0;</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">e=-dx;x=x0;y=y0;</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">w</span><span style="font-family:Calibri; font-size:10.5pt">hile (x&lt;=x1)</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">{ putpixel(x,y);</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">x</span><span style="font-family:Calibri; font-size:10.5pt">++;</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">e=e+2*dy;</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">If (e&gt;0)</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">{  </span><span style="font-family:Calibri; font-size:10.5pt"> y++;</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">   </span><span style="font-family:Calibri; font-size:10.5pt"> </span><span style="font-family:Calibri; font-size:10.5pt">e=e-2*dx;</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">}</span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="width:3pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">}</span><span style="width:17.7pt; text-indent:0pt; display:inline-block"></span></p><p style="margin:0pt 0pt 0pt 18pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">8</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">写出一个点的二维图形的旋转变换程序（</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">c++</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">）</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">#define PI=3.14</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">void XuanZhuan(){</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">float d=30.0*PI/180.0(</span><span style="font-family:宋体; font-size:10.5pt">这里假设旋转</span><span style="font-family:Calibri; font-size:10.5pt">30</span><span style="font-family:宋体; font-size:10.5pt">度</span><span style="font-family:Calibri; font-size:10.5pt">);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">int x=100,y=200;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">x=x*cos(d)-y*sin(d);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">y=x*sin(d)+y*cos(d);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">8</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">种子填充算法</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">void FloodFill4(int x,int y,int oldColor,int newColor)</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">{  if(GetPixel(x,y) == oldColor)</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">  { PutPixel(x,y,newColor);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">    FloodFill4(x,y+1,oldColor,newColor);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">    FloodFill4(x,y-1,oldColor,newColor);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">    FloodFill4(x-1,y,oldColor,newColor);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">   </span><span style="font-family:Calibri; font-size:10.5pt"> </span><span style="font-family:Calibri; font-size:10.5pt">FloodFill4(x+1,y,oldColor,newColor);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">   }</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:10pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:normal">}</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold"> </span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">9</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">平移</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">void CDialog_Translate::OnOK() </span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">{</span><span style="width:17.7pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">UpdateData(true);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">glClear(GL_COLOR_BUFFER_BIT);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">glMatrixMode(GL_MODELVIEW);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">glLoadIdentity();</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">glTranslatef(m_delta_x, m_delta_y, m_delta_z);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">CDialog::OnOK();}</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">10</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">、</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">比例</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">void CDialog_Scale::OnOK() </span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">{   UpdateData(true);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">glClear(GL_COLOR_BUFFER_BIT);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">glMatrixMode(GL_MODELVIEW);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">glLoadIdentity();</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">glScalef(m_scale_x, m_scale_y, m_scale_z);</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="width:21pt; text-indent:0pt; display:inline-block"></span><span style="font-family:Calibri; font-size:10.5pt">CDialog::OnOK();</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt">}</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><img src="7045f201-af1f-4f26-8fdd-9a90eae42fbf.001.png" width="378" height="341" alt="" style="-aw-left-pos:0pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:0pt; -aw-wrap-type:inline"><img src="7045f201-af1f-4f26-8fdd-9a90eae42fbf.002.png" width="279" height="174" alt="" style="-aw-left-pos:0pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:0pt; -aw-wrap-type:inline"></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; text-indent:-18pt; widows:0"><span style="font-family:'Wingdings 2'; font-size:10.5pt"></span><span style="font:7.0pt 'Times New Roman'">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">关于</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">y=x</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">轴对称</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold"> </span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold"> </span><img src="7045f201-af1f-4f26-8fdd-9a90eae42fbf.003.png" width="70" height="78" alt="" style="-aw-left-pos:0pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:0pt; -aw-wrap-type:inline"></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; text-indent:-18pt; widows:0"><span style="font-family:'Wingdings 2'; font-size:10.5pt"></span><span style="font:7.0pt 'Times New Roman'">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">关于</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">y=-x</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">轴对称</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt 0pt 0pt 36pt; orphans:0; text-align:justify; text-indent:-18pt; widows:0"><span style="font-family:'Wingdings 2'; font-size:10.5pt"></span><span style="font:7.0pt 'Times New Roman'">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">对称于</span><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">XOY</span><span style="font-family:宋体; font-size:10.5pt; font-weight:bold">平面</span><img src="7045f201-af1f-4f26-8fdd-9a90eae42fbf.004.png" width="149" height="96" alt="" style="-aw-left-pos:0pt; -aw-rel-hpos:column; -aw-rel-vpos:paragraph; -aw-top-pos:0pt; -aw-wrap-type:inline"></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:21.1pt; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p><p style="margin:0pt 0pt 0pt 20pt; orphans:0; text-align:justify; widows:0"><span style="font-family:Calibri; font-size:10.5pt; font-weight:bold">&#xa0;</span></p></div><div class="cnzz" style="display: none;">
+	       </div></body></html>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请我吃辣条吧！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/pay/wx.png" alt="lewyu WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/pay/zfb.png" alt="lewyu Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/06/操作系统复习/" rel="next" title="操作系统复习">
+                <i class="fa fa-chevron-left"></i> 操作系统复习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/img/touxiang.gif"
+               alt="lewyu" />
+          <p class="site-author-name" itemprop="name">lewyu</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lewyu" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/lewyu521" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lewyu521" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      微博
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/lewyu" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      知乎
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lewyu</span>
+</div>
+
+<br>
+<footer class="footer">
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
+</footer>
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
